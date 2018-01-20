@@ -9,6 +9,7 @@
             background-image:url('https://images.unsplash.com/photo-1468234847176-28606331216a?auto=format&fit=crop&w=2815&q=80');
             background-repeat:no-repeat;
             background-size:300%;
+            font-family:Trebuchet MS;
         }
         h1{
             font-family:Impact;
@@ -17,17 +18,14 @@
             
         }
         h2{
-            font-family:Trebuchet MS;
             font-size:200%;
             margin:15px;
         }
         p{
-            font-family:Trebuchet MS;
             font-size:150%;
             text-align: left;
         }
         button{
-            font-family:Trebuchet MS;
             display:inline-block;
             border:0;
             font-size: 150%;
@@ -65,19 +63,69 @@
         a:active{
             border:0;
         }
+        * {
+            box-sizing: border-box;
+        }
         
+        body {
+          margin: 0;
+        }
+        
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        /* Style the content */
+        .content {
+            padding: 10px;
+            height:90%;
+        }
+        
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 5px;
+            
+        }
     </style>
 </head>
 
 <body>
-    <br>
-    <br>
-    <br>
-    <a href="/Users/deniselee/Google Drive/Misc/UofTHacks/UofT-Hub/home.html" class="h1">U of T Events Hub</a>
-    <h2>Find info about upcoming events, club activities, and free food!</h2>
-    <br>
-    <br>
-    <a href="/Users/deniselee/Google Drive/Misc/UofTHacks/UofT-Hub/create.html" class="button">Create Event</a>
-    <a href="/Users/deniselee/Google Drive/Misc/UofTHacks/UofT-Hub/search.html" class="button">Search Events</a>
+    <div class="topnav">
+        <a href="/Users/deniselee/Google Drive/Misc/UofTHacks/UofT-Hub/create.html">Create Event</a>
+        <a href="/Users/deniselee/Google Drive/Misc/UofTHacks/UofT-Hub/search.html">Search Events</a>
+        <a href="#">Link</a>
+    </div>
+    
+    <div class="content">
+        <a href="/Users/deniselee/Google Drive/Misc/UofTHacks/UofT-Hub/home.html" class="h1">U of T Events Hub</a>
+        <h2>Find info about upcoming events, club activities, and free food!</h2>
+        <br>
+        
+    </div>
+    
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+    
 
 </body>
