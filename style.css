@@ -1,0 +1,59 @@
+body{
+    color:white;
+    text-align:center;
+    background-image:url('https://images.unsplash.com/photo-1468234847176-28606331216a?auto=format&fit=crop&w=2815&q=80');
+    background-repeat:no-repeat;
+    background-size:300%;
+}
+h1{
+    font-family:Impact;
+    font-size:500%;
+    margin:1px;
+    
+}
+h2{
+    font-family:Trebuchet MS;
+    font-size:200%;
+    margin:15px;
+}
+p{
+    font-family:Trebuchet MS;
+    font-size:150%;
+    text-align: left;
+}
+button{
+    font-family:Trebuchet MS;
+    display:inline-block;
+    border:0;
+    font-size: 150%;
+    border-radius: 2px;
+    padding:12px;
+    margin:5px;
+}
+a.h1{
+    font-family:Impact;
+    font-size:500%;
+    margin:1px;
+    color:white;
+    text-decoration:none;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    
+    font-family:Trebuchet MS;
+    display:inline-block;
+    border:0;
+    background-color:white;
+    font-size: 150%;
+    border-radius: 2px;
+    padding:12px;
+    margin:5px;
+}
+a.button:visited{
+    border:0;
+}
