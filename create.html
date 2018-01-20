@@ -11,7 +11,7 @@
             display:inline-block;
         }
         input[type=text], select {
-            width: 50%;
+            width: 100%;
             padding: 12px 20px;
             margin-left: 20px;
             margin: 8px 0;
@@ -19,11 +19,11 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
-            font-size:200%;
+            
         }
 
         input[type=submit] {
-            width: 100%;
+            width: 20%;
             background-color: #4CAF50;
             color: white;
             padding: 14px 20px;
@@ -31,11 +31,19 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            text-align:center;
+        }
+        select {
+            width: 100%;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
         }
 
-input[type=submit]:hover {
-    background-color: #45a049;
-}
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
 
     </style>
 </head>
@@ -49,14 +57,47 @@ input[type=submit]:hover {
     <br>
     <br
     <form>
-        <p class="form">Event Name:</p>
-        <input type="text" name="Event Name" placeholder="Event Name.."><br>
-        <p class="form">Event Location:</p>
-        <input type="text" name="Event Location" placeholder="Event Location.."><br>
-        <p class="form">Event Details:</p>
-        <input type="text" name="Event Details" placeholder="Event Details.."><br>
-        <p class="form">Event Name:</p>
-        <input type="text" name="Event Name" placeholder="Event "><br>
+        <table style="width:90%">
+
+          <tr>
+            <td><p class="form">Event Name:</p></td>
+            <td><input type="text" name="Event Name" placeholder="Event Name.."><br></td> 
+          </tr>
+        <tr>
+            <td><p class="form">Event Date:</p></td>
+            <td><select id="month" name="month">
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select><br><input type="text" name="date" placeholder="Date..">
+                </td> 
+          </tr>
+          <tr>
+            <td><p class="form">Event Location:</p></td>
+            <td><select id="building" name="building">
+            <option value="AN">Annesley Hall | AN</option>
+            <option value="AP">Anthropology Building | AP</option>
+            <option value="AB">Astronomy & Astrophysics Building | AB</option>
+        </select><br><input type="text" name="room" placeholder="Room #.."><br>
+            </td> 
+          </tr>
+          <tr>
+            <td><p class="form">Event Details:</p></td>
+            <td><input type="text" name="Event Details" placeholder="Event Details.."><br></td> 
+          </tr>
+          
+        </table>
+
+        <input type="submit" value="Submit">
 
     </form>
 </body>
