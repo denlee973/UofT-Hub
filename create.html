@@ -24,7 +24,7 @@
 
         input[type=submit] {
             width: 20%;
-            background-color: #4CAF50;
+            background-color: #ff8300;
             color: white;
             padding: 14px 20px;
             margin: 8px 0;
@@ -48,7 +48,10 @@
         a{
             text-align:center;
         }
-
+    .small{
+        font-size: 15pt;
+        color: #ba6c30;
+    }
     </style>
 </head>
 
@@ -98,8 +101,10 @@
             <td><input type="date" name="date"></td> 
           </tr>
         <tr>
-            <td><p/ class = "form"> Event Time:</p></td>
-            <td><input type="time" name= "time"></td> 
+            <td><p/ class = "form">Event Time:</p></td>
+            
+            <td><p class= "small">From:</p><input type="time" name= "time"></td>
+             <td><p class= "small">To:</p><input type="time" name= "time"></td>
             </tr>
           <tr>
             <td><p class="form">Event Location:</p></td>
