@@ -42,12 +42,12 @@ button:hover {
 }
 
 img.avator {
-    width: 40%;
-    border-radius: 10%;
+    width: 45%;
+    border-radius: 5%;
 }
 
 .container {
-    padding: 16px;
+    padding: 20px;
 }
 
 span.psw {
@@ -55,15 +55,7 @@ span.psw {
     padding-top: 16px;
 }
 
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-}
+
 </style>
 </head>
 <body>
