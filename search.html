@@ -56,6 +56,41 @@
         font-size: 120%;
         colour: #000000;
     }
+    
+    /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #00204E;
+        }
+        
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        /* Style the content */
+        .content {
+            padding: 10px;
+            height:90%;
+        }
+        
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 5px;
+            
+        }
     </style>
 </head>
 
@@ -64,9 +99,13 @@
         
         var searchval = document.getElementById("search").value;
     </script>
-    <br>
-    <br>
-    <br>
+    <div class="topnav">
+        <a href="create.html">Create Event</a>
+        <a href="search.html">Search Events</a>
+        <a href="campus_map.html">Campus Map</a>
+        <a href="login.html" float:left>Login</a>
+
+    </div>
     <div class="center">
     <a href="/Users/deniselee/Google Drive/Misc/UofTHacks/UofT-Hub/home.html" class="h1">U of T Events Hub</a></div>
     <br>
