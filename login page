@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-#not sure about this<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 form {
-    border:    ;
-    
+    border: 3px solid #f1f1f1;
 }
-input[type= text], input[type= password]{
-    width: ;
-    padding: ;
-    margin: ;
-    display: ;
-    border: ;
-    box-sizing: border-box; 
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 button {
-    background-color: 1a237e;
+    background-color: #1a237e;
     color: white;
-    padding: ;
+    padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
 }
+
 button:hover {
     opacity: 0.8;
 }
@@ -38,34 +38,53 @@ button:hover {
 
 .imgcontainer {
     text-align: center;
-    margin: ;
+    margin: 25px 0 15px 0;
 }
 
-img.avator {
-    width: 40%;
-    border-radius: 10%;
+img.avatar {
+    width: 45%;
+    border-radius: 5%;
 }
 
 .container {
-    padding: 16px;
+    padding: 20px;
 }
 
 span.psw {
     float: right;
-    padding-top: 16px;
+    padding-top: px;
 }
 
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
 }
 </style>
 </head>
 <body>
 
-<img src = "http://www.utorontoeit.com/gfx/frontlogo.png" alt = "UofT Logo">
+<h2>Login Page</h2>
+
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src = "http://www.utorontoeit.com/gfx/frontlogo.png" alt = "UofT Logo" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label><b>UTORid / JOINid</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw"><a href="#"> Forgot password?</a></span>
+  </div>
+</form>
+
+</body>
+</html>
