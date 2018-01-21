@@ -41,7 +41,7 @@ button:hover {
     margin: ;
 }
 
-img.avatar {
+<img src = "http://www.utorontoeit.com/gfx/frontlogo.png" alt = "UofT Logo">
     width: %;
     border-radius: %;
 }
