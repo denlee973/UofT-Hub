@@ -4,4 +4,26 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-<form>
+form {
+    border:    ;
+    
+}
+input[type= text], input[type= password]{
+    width: ;
+    padding: ;
+    margin: ;
+    display: ;
+    border: ;
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: ;
+    color: white;
+    padding: ;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
