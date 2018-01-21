@@ -41,9 +41,9 @@ button:hover {
     margin: ;
 }
 
-img.avatar {
-    width: %;
-    border-radius: %;
+img.avator {
+    width: 40%;
+    border-radius: 10%;
 }
 
 .container {
@@ -67,3 +67,5 @@ span.psw {
 </style>
 </head>
 <body>
+
+<img src = "http://www.utorontoeit.com/gfx/frontlogo.png" alt = "UofT Logo">
